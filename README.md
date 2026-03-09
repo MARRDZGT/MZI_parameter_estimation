@@ -4,7 +4,7 @@
 
 This repository contains code to numerically study the problem of **point
 estimation** in a two-parameter Mach–Zehnder interferometer model implemented on
-a fixed spin-$j$ representation of $SU(2)$. The main focus is the comparison
+a fixed spin - $j$ representation of $SU(2)$. The main focus is the comparison
 between:
 
 - the **Bayes risk matrix** of the posterior-mean estimator,
@@ -44,8 +44,9 @@ The induced pmf is $$p(m\mid \beta,\phi) = \left|\langle j,m \mid R(\beta,\phi)\
 
 For $\theta=(\beta,\phi)$, the Fisher information matrix is
 
-$\,I(\theta)_{ab}=\sum_m \frac{\partial_a p(m\mid\theta)\,\partial_b p(m\mid\theta)}{p(m\mid\theta)}\,$,
-for $a,b\in\{\beta,\phi\}$.
+$$I(\theta)_{ab} = \sum_m \frac{\partial_a p(m\mid\theta)\,\partial_b p(m\mid\theta)}{p(m\mid\theta)}$$,
+
+for $a,b \in \set{\beta,\phi}$.
 
 ## What the code computes
 
@@ -119,8 +120,6 @@ Supported taper options:
 ├── requirements.txt
 ├── scripts/
 │   └── matricial_risk_vs_bounds.py
-├── figures/              # optional (generated outputs)
-└── outputs/              # optional (generated runs)
 ```
 ---
 
