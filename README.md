@@ -192,7 +192,7 @@ Each run writes an output directory (timestamped unless you set `output_root`) c
 * plots:
 
   * trace comparisons (linear/log-y)
-  * eigenvalue comparisons $min/max, linear/log-y$
+  * eigenvalue comparisons (min/max, linear/log-y)
   * PSD diagnostics: mean $\lambda_{\min}(R_n - B)$
 
 ---
