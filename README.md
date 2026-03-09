@@ -192,20 +192,20 @@ Each run writes an output directory (timestamped unless you set `output_root`) c
 * plots:
 
   * trace comparisons (linear/log-y)
-  * eigenvalue comparisons (min/max, linear/log-y)
-  * PSD diagnostics: mean (\lambda_{\min}(R_n - B))
+  * eigenvalue comparisons $min/max, linear/log-y$
+  * PSD diagnostics: mean $\lambda_{\min}(R_n - B)$
 
 ---
 
 ## Reproducibility and numerical details
 
-* **Grid-based computation:** the prior and the posterior are computed on the *same* ((\beta,\phi_u)) grid.
+* **Grid-based computation:** the prior and the posterior are computed on the *same* $(\beta,\phi_u)$ grid.
 * **Regularity filters:** grid points are discarded if:
 
   * Fisher information is non-finite,
-  * (\det I(\theta)\le \texttt{det_tol}),
+  * $\det I(\theta)\le \texttt{det_tol}$,
   * or the pmf has near-zero support mass (controlled by `eps_support`).
-* **Monte Carlo design:** outer replicates (`m_batch`) × inner experiments (`r_batch`) estimate (R_n) with uncertainty.
+* **Monte Carlo design:** outer replicates (`m_batch`) × inner experiments (`r_batch`) estimate $R_n$ with uncertainty.
 * **Phase treatment:** phase is handled on the unwrapped chart for inference; phase errors can be wrapped for reporting.
 
 ---
